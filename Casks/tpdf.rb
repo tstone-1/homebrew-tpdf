@@ -7,6 +7,13 @@ cask "tpdf" do
   desc "Fast PDF viewer and editor"
   homepage "https://github.com/tstone-1/tpdf"
 
+  # The repository also publishes its PDFium engine builds as prereleases,
+  # tagged `pdfium-...`; the latest full release is the application.
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   # tpdf updates itself (Tauri updater, signed payloads), so the installed app
   # can be newer than this cask's `version`. Without this, `brew upgrade` would
   # reinstall the cask version over a self-updated app.
