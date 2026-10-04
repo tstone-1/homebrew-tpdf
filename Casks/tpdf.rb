@@ -1,6 +1,6 @@
 cask "tpdf" do
-  version "26.10.3"
-  sha256 "bd3a60cd880dab550d97fad8fefc18cf18e2e569c9249cbe39c939eaa6a08cd2"
+  version "26.10.4"
+  sha256 "2e853e5a79fb2a5722a3f9301b19cf1865c0646200515b0943c47c73429c4c0c"
 
   url "https://github.com/tstone-1/tpdf/releases/download/v#{version}/tpdf_#{version}_aarch64.dmg"
   name "tpdf"
