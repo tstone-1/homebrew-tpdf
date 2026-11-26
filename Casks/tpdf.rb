@@ -19,7 +19,7 @@ cask "tpdf" do
   # reinstall the cask version over a self-updated app.
   auto_updates true
   depends_on arch: :arm64
-  depends_on :macos
+  depends_on macos: ">= :ventura"
 
   app "tpdf.app"
 
